@@ -11,9 +11,10 @@
           <img src="img/logo.png" width="164" height="36" alt="логотип">
         </a>
         <form class="form-searh" method="get" action="https://echo.htmlacademy.ru">
-          <input type="text" id="message-searh">
-          <label class="visually-hidden" for="message-searh">Поиск по сайту</label>
-          <button type="submit"></button>
+         <label>
+          <span class="searh-indicator"></span>
+          <input type="text" name="site-searh" value="" id="message-searh" placeholder="Поиск по сайту">
+         </label>
         </form>
         <ul class="user-nav">
           <li><a href="#">Войти</a></li>
@@ -49,6 +50,7 @@
         </ul>
       </nav>
     </header>
+    
     <main>
       <div class="slider">
         <ul class="slider-wrapper">
@@ -120,6 +122,7 @@
           </li>               
         </ul>
       </div>
+      
       <ul class="main-catalog-nav">
         <li><a href="#">Виртуальная реальность</a></li>
         <li><a href="#">Моноподы для селфи</a></li>
@@ -128,6 +131,7 @@
         <li><a href="#">Умные часы</a></li>
         <li><a href="#">Квадрокоптеры</a></li>
       </ul>
+      
       <ul class="services">
         <li>Доставка
           <section>
@@ -151,6 +155,7 @@
           </section>  
         </li>       
       </ul>
+      
       <ul class="brends">
         <li>
           <img src="img/brend-1.png" width="127" height="73" alt="">
@@ -165,6 +170,7 @@
           <img src="img/brend-4.png" width="200" height="56" alt="">
         </li>
       </ul>
+      
       <section class="about-us">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -176,6 +182,7 @@
         </ul>
         <a href="#">Подробнее о нас</a>
       </section>
+      
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -183,6 +190,7 @@
         <a href="#">Напишите нам</a>
       </section>
     </main>
+    
     <footer class="main-footer">
       <a class="footer-logo">
        <img src="img/yellow-logo.png" width="163" height="36" alt="Логотип">
@@ -208,5 +216,32 @@
         <li><a class="social-button" href="#">Твитер</a></li>
       </ul>
     </footer>
+    
+    <section class="modal modal-mail">
+      <form method="post" action="https://echo.htmlacademy.ru">
+       <p>
+        <label for="modal-user-name">Ваше имя:</label>
+        <input type="text" name="user-name" value="" id="modal-user-name" placeholder="Имя Фамилия">
+       </p>
+       <p>
+        <label for="modal-user-mail">Ваш e-mail:</label>
+        <input type="email" name="user-mail" value="" id="modal-user-mail" placeholder="email@example.com">
+       </p>
+       <p>
+        <label for="modal-user-letter">Текст письма:</label>
+        <textarea name="letter" id="modal-user-letter" placeholder="В свободной форме"></textarea>
+       </p>     
+        <button class="button">Отправить</button>
+      </form>
+      <button class="modal-close-button">Закрыть</button>
+    </section>
+    
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-popup.jpg" width="780" height="560" alt="Офис компании по адресу">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
