@@ -455,7 +455,7 @@ a.sort-current{
 .modal-mail input:focus,
 .modal-mail textarea:focus{
   background-color: transparent;
-  border: 3px solid rgba(240,197,46,1.0);
+  outline: 3px solid rgba(240,197,46,1.0);
 }
 
 .modal-mail input:invalid,
