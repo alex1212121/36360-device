@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <!--подключение шрифта open-sans-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- шрифт gilroy полключается в файле style.css локально-->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -11,7 +16,7 @@
           <img src="img/logo.png" width="164" height="36" alt="логотип">
         </a>
         <form class="form-searh" method="get" action="https://echo.htmlacademy.ru">
-         <label>
+         <label for="message-searh">
           <span class="searh-indicator"></span>
           <input type="text" name="site-searh" value="" id="message-searh" placeholder="Поиск по сайту">
          </label>
@@ -54,18 +59,18 @@
     <main>
       <h1 class="visually-hidden">Главная страница интернет магазина Device</h1>
       
-      <section class="slider">
-       <h2 class="visually-hidden">Лучше товары</h2>
+      <section class="best-products">
+       <h2 class="visually-hidden">Лучшие товары</h2>
         <ul class="slider-wrapper">
-          <li>
+          <li class="best-products-slide">
             <img class="slider-product" src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-            <span class="slid-number">01</span>
+            <span class="best-products-slid-number">01</span>
             <b>Делай селфи,
              как Бен Стиллер!</b>
             <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#">Подробнее</a>
-            <table class="slider-product-properties">
+            <a href="#" class="button">Подробнее</a>
+            <table class="best-product-properties">
               <tr class="properties-value">
                 <td>8,5 м</td>
                 <td>5 кг</td>
@@ -78,14 +83,14 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li class="best-products-slide">
             <img class="slider-product" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            <span class="slid-number">02</span>
+            <span class="best-products-slid-number">02</span>
             <b>Худеем
              правильно!</b>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе<br> силы не пропускать занятия и соблюдать диету.</p>
-            <a href="#">Подробнее</a>
-            <table class="slider-product-properties">
+            <a href="#" class="button">Подробнее</a>
+            <table class="best-product-properties">
               <tr class="properties-value">
                 <td>48 часов</td>
               </tr>
@@ -94,14 +99,14 @@
               </tr>
             </table>
           </li>
-          <li>
+          <li class="best-products-slide">
             <img class="slider-product" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            <span class="slid-number">03</span>
+            <span class="best-products-slid-number">03</span>
             <b>Порхает как бабочка,
              жалит как пчела!</b>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру</p>
-            <a href="#">Подробнее</a>
-            <table class="slider-product-properties">
+            <a href="#" class="button">Подробнее</a>
+            <table class="best-product-properties">
               <tr class="properties-value">
                 <td>800 м</td>
                 <td>50 м</td>
@@ -141,24 +146,24 @@
       <section class="services">
         <h2 class="visually-hidden">Наши услуги</h2>
         <ul>
-          <li>Доставка
+          <li class="services-active">
             <section>
-              <h3 class="visually-hidden>">Доставка</h3>
-              <button>Доставка</button>
+              <h3>Доставка</h3>
+              <button class="button">Доставка</button>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </section>
           </li>
-          <li>Гарантия
+          <li>
             <section>
-              <h3 class="visually-hidden>">Гарантия</h3>
-              <button>Гарантия</button>
+              <h3>Гарантия</h3>
+              <button class="button">Гарантия</button>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </section>
           </li>
-          <li>Кредит
+          <li>
             <section>
-              <h3 class="visually-hidden>">Кредит</h3>
-              <button>Кредит</button>
+              <h3>Кредит</h3>
+              <button class="button">Кредит</button>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </section>  
           </li>       
@@ -183,24 +188,26 @@
         </ul>
       </section>
       
-      <section class="about-us">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#">Подробнее о нас</a>
-      </section>
-      
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map.png" width="560" height="222" alt="Карта">
-        <a href="#">Напишите нам</a>
-      </section>
+      <div class="index-columns">
+        <section class="about-us">
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="list-of-carriers">
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="button">Подробнее о нас</a>
+        </section>
+
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <img src="img/map.png" width="560" height="222" alt="Карта">
+          <a href="#" class="button">Напишите нам</a>
+        </section>
+      </div>
     </main>
     
     <footer class="main-footer">
@@ -227,6 +234,7 @@
         <li><a class="social-button" href="#">Интсаграмм</a></li>
         <li><a class="social-button" href="#">Твитер</a></li>
       </ul>
+      <a class="logo-html visually-hidden" href="https://htmlacademy.ru/">htmlacademy</a>
     </footer>
     
     <section class="modal modal-mail">
@@ -254,7 +262,7 @@
       <p>
         <img src="img/map-popup.jpg" width="780" height="560" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
       </p>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close">Закрыть</button>
     </section>
   </body>
 </html>

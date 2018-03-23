@@ -1,0 +1,464 @@
+@font-face{
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroylight.woff2') format('woff2');
+  src: url('../fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+  src: url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/*************Общие стили**************/
+
+body{
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(70,70,70,1,0);
+  
+  background-color: rgba(255,255,255,1.0);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.button{
+  font-family: "Gilroy",sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+
+  text-align: center;
+  color: rgba(0,0,0,1.0);
+  background-color: transparent;
+  background-image: url(../img/yellow-line.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  text-transform: uppercase;
+  
+  border: none;
+}
+
+.button:hover,
+.button:focus{
+  background-image: none;
+  background-color: rgba(240,197,46,1.0);
+}
+
+.button:active{
+  background-image: none;
+  background-color: rgba(240,197,46,1.0);
+  color: rgba(0,0,0,0.3);
+}
+
+/**********Стили header*************/
+
+.main-header{
+  background-color: rgba(247,226,150,1.0);
+}
+
+.form-searh input[type=text]{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  color: rgba(0,0,0,1,0);
+  
+  opacity: 0.3;
+}
+
+.form-searh input[type=text]:hover{
+  opacity: 0.6;
+}
+
+.form-searh input[type=text]:focus{
+  opacity: 1.0;
+  border-bottom: 2px solid rgba(0,0,0,1.0);
+}
+
+.main-nav a:hover,
+.main-nav a:focus{
+  opacity: 0.6;
+}
+
+.main-nav a:active{
+  opacity: 0.3;
+}
+
+.user-nav a{
+  color: rgba(0,0,0,1.0);
+}
+
+.cite-nav a{
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: rgba(0,0,0,1.0);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-nav a{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(0,0,0,1,0);
+  text-transform: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus{
+  opacity: 0.6;
+}
+
+.main-nav a:active{
+  opacity: 0.3;
+}
+
+/*****Стили для секции со слайдером с лучшими товарами******/
+
+.best-products-slid-number{
+  font-family: "Gilroy", sans-serif;
+  font-size: 179.2px;
+  font-weight: 800;
+  color: rgba(255,255,255,1.0);
+}
+
+.best-products-slide b{
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+  line-height: 56px;
+}
+
+.properties-value td{
+  font-family: "Gilroy", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: rgba(0,0,0,1.0);
+}
+
+.properties-name td{
+  font-size: 13px;
+}
+
+/******Стили для main-catalog-nav ******/
+
+.main-catalog-nav a{
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+  line-height: 24px;
+}
+
+.main-catalog-nav a:focus,
+.main-catalog-nav a:active{
+  opacity: 0.3;
+}
+/*наведение и иконки будут на псевдоэлементах*/
+
+/*******Стили для services***************/
+
+.services{
+  background-color: rgba(229,229,229,1.0); 
+}
+
+.services h3{
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+}
+
+/*********Стили для brends*******************/
+.brends img{
+  opacity: 0.2;
+}
+/*При наведении поведение на псевдоэлементах*/
+
+/******Стили для about-us и contacts************/
+
+.index-columns h2{
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+}
+
+.index-columns p{
+  letter-spacing: 0.0em;
+}
+
+.list-of-carriers li{
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+}
+
+/**********Стили для footer**************/
+
+.main-footer{
+  color: rgba(255,255,255,1.0);
+  background-color: rgba(70,70,70,1.0);
+}
+
+ .main-footer a{
+  color: rgba(255,255,255,1.0);
+}
+
+.main-footer a:hover,
+.main-footer a:focus{
+  opacity: 0.6;
+}
+
+.main-footer a:active{
+  opacity: 0.3;
+}
+
+.footer-contacts p{
+  letter-spacing: 0.0em;
+}
+
+.footer-user-nav a{
+  color: rgba(255,255,255,0.7);
+}
+
+.footer-user-nav a:hover,
+.footer-user-nav a:focus{
+  color: rgba(255,255,255,1.0);
+}
+
+.footer-user-nav a:active{
+  opacity: 0.3;
+}
+
+.footer-cite-nav a{
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(255,255,255,1.0);
+  letter-spacing: 0.2em;
+}
+
+/**********Стили для старницы каталога****/
+.catalog-page h1{
+  font-family: "Gilroy", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0); 
+}
+
+.breadcrumb a{
+  color: rgba(0,0,0,0.3);
+  font-size: 14px;
+  background-image: url(../img/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus{
+  color: rgba(0,0,0,0.6);
+}
+
+.breadcrumb a:active{
+  color: rgba(0,0,0,0.1);
+}
+
+.filters h2{
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+  letter-spacing: 0.2em;
+  background-color: rgba(219,219,219,1.0);
+  text-transform: uppercase;
+}
+
+.filters-form{
+  background-color: rgba(238,238,238,1.0);
+}
+
+.filters-form legend{
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+  letter-spacing: 0.01em;
+}
+
+
+
+.filters-form fieldset{
+  border:none;
+}
+
+.min-value span,
+.max-value span{
+  font-family: "Gilroy", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0,0,0,0.2);
+  letter-spacing: 0.0em;
+}
+
+.filters-form label{
+  font-size: 14px;
+  color: rgba(0,0,0,1.0);
+}
+
+.sort{
+  background-color: rgba(235,235,235,1.0);
+}
+
+.sort h2{
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sort a{
+  font-size: 14px;
+  letter-spacing: 0.0em;
+  color: rgba(0,0,0,0.3);
+}
+
+.sort a:hover,
+.sort a:focus{
+  color: rgba(0,0,0,0.6);
+}
+
+.sort a:active{
+  color: rgba(0,0,0,1.0)
+}
+
+a.sort-current{
+  color: rgba(0,0,0,1.0)
+}
+
+.catalog-item a{
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+  letter-spacing: 0.01em;
+}
+
+.catalog-item b{
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(70,70,70,1.0);
+  letter-spacing: 0.01em;
+}
+
+.item-user-nav .regular-link{
+  font-size: 13px;
+  color: rgba(0,0,0,0.5);
+}
+
+.item-user-nav .regular-link:hover,
+.item-user-nav .regular-link:focus{
+  color: rgba(0,0,0,1.0);
+}
+
+.item-user-nav .regular-link:active{
+  color: rgba(0,0,0,0.2);
+}
+
+.pagination-list a{
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: rgba(0,0,0,0.3);
+  background-color: rgba(235,235,235,1.0);
+  letter-spacing: 0.2em;
+}
+
+.pagination-list .pagination-back,
+.pagination-list .pagination-item-current,
+.pagination-list .pagination-forward,
+.pagination-list a:hover,
+.pagination-list a:focus{
+  color: rgba(0,0,0,1.0);
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus,
+.pagination-list a:active{
+  background-color: rgba(217,217,217,1.0);
+}
+
+.pagination-list .pagination-back:active,
+.pagination-list .pagination-forward:active{
+  color: rgba(0,0,0,0.3);
+}
+
+/********Стили для модалок**********/
+
+.modal-mail{
+  background-color: rgba(255,255,255,1.0);
+}
+
+.modal-mail label{
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(0,0,0,1.0);
+  letter-spacing: 0.0em;
+}
+
+.modal-mail input,
+.modal-mail textarea{
+  border: none;
+  outline: none;
+  background-color: rgba(242,242,242,1.0);
+  color: rgba(70,70,70,0.4);
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.0em;
+}
+
+.modal-mail input:hover,
+.modal-mail textarea:hover{
+  background-color: rgba(234,234,234,1.0);
+}
+
+.modal-mail input:focus,
+.modal-mail textarea:focus{
+  background-color: transparent;
+  border: 3px solid rgba(240,197,46,1.0);
+}
+
+.modal-mail input:invalid,
+.modal-mail textarea:invalid{
+  background-color: rgba(246,218,218,1.0);
+}

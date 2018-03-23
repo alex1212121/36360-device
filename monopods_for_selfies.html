@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <!--подключение шрифта open-sans-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- шрифт gilroy полключается в файле style.css локально-->
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-logo" href="index.html">
@@ -57,17 +62,17 @@
       <ul class="breadcrumb">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="#"  class="breadcrumb-current">Моноподы для селфи</a></li>
       </ul>
       
       <section class="filters">
         <h2>Фильтр:</h2>
-        <form method="get" action="https://echo.htmlacademy.ru">
+        <form method="get" action="https://echo.htmlacademy.ru" class="filters-form">
           <fieldset>
             <legend>Стоимость</legend>
             <input type="range" min="0" max="10000" step="1" value="0" name="min-value">
             <span class="min-value">От 0</span>
-            <input type="range" min="0" max="10000" step="1" value="" name="max-value">            
+            <input type="range" min="0" max="10000" step="1" value="" name="max-value">  
             <span class="max-value">До 5000</span>
           </fieldset>
           <fieldset>
@@ -106,16 +111,16 @@
         </form>
       </section>
       
-      <div class="sort">
+      <section class="sort">
         <h2>Сортировка</h2>
         <ul>
-          <li><a href="#">По цене</a></li>
+          <li><a href="#" class="sort-current">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
-          <li><a class="button" href="#">По убываню</a></li>
-          <li><a class="button" href="#">По возрастанию</a></li>
+          <li><a class="visually-hidden" href="#">По убываню</a></li>
+          <li><a class="visually-hidden" href="#">По возрастанию</a></li>
         </ul>
-      </div>
+      </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список селфи палок</h2>
         <ul class="catalog-list">
@@ -143,14 +148,14 @@
         
         <ul class="item-user-nav">
           <li><a class="button" href="#">В корзину</a></li>
-          <li><a href="#"></a>Добавить к сравнению</li>
+          <li><a href="#" class="regular-link">Добавить к сравнению</a></li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">Назад</a></li>
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Вперёд</a></li>
+          <li><a href="#" class="pagination-item pagination-back">Назад</a></li>
+          <li><a href="#" class="pagination-item pagination-item-current">1</a></li>
+          <li><a href="#" class="pagination-item">2</a></li>
+          <li><a href="#" class="pagination-item">3</a></li>
+          <li><a href="#" class="pagination-item pagination-forward">Вперёд</a></li>
         </ul>
       </section>
     </main>
