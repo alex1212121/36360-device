@@ -15,17 +15,19 @@
         <a class="main-logo">
           <img src="img/logo.png" width="164" height="36" alt="логотип">
         </a>
-        <form class="form-searh" method="get" action="https://echo.htmlacademy.ru">
-         <label for="message-searh">
-          <span class="searh-indicator"></span>
-          <input type="text" name="site-searh" value="" id="message-searh" placeholder="Поиск по сайту">
-         </label>
-        </form>
-        <ul class="user-nav">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
+        <div class="container">
+          <form class="form-searh" method="get" action="https://echo.htmlacademy.ru">
+           <label for="message-searh">
+            <span class="searh-indicator"></span>
+            <input type="text" name="site-searh" value="" id="message-searh" placeholder="Поиск по сайту">
+           </label>
+          </form>
+          <ul class="user-nav">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
         <ul class="cite-nav">
           <li><a href="#">Каталог товаров</a>
             <ul class="catalog-nav">
@@ -120,13 +122,13 @@
         </ul>
         <ul class="slider-btn">
           <li>
-            <button></button>
+            <button class="visually-hidden"></button>
           </li>
           <li>
-            <button></button>
+            <button class="visually-hidden"></button>
           </li>
           <li>
-            <button></button>
+            <button class="visually-hidden"></button>
           </li>               
         </ul>
       </section>
@@ -211,19 +213,17 @@
     </main>
     
     <footer class="main-footer">
+    <div class="footer-wraper">
+     <div class="container">
       <a class="footer-logo">
        <img src="img/yellow-logo.png" width="163" height="36" alt="Логотип">
       </a>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p>г. Москва, ул. Строителей, 15<br>
-        Тел.: +7 (495) 495-95-95</p>
+      <section class="footer-adress">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <p>г. Москва, ул. Строителей, 15</p>
       </section>
-      <ul class="footer-user-nav">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
+     </div>
+     <div class="container">
       <ul class="footer-cite-nav">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -234,7 +234,21 @@
         <li><a class="social-button" href="#">Интсаграмм</a></li>
         <li><a class="social-button" href="#">Твитер</a></li>
       </ul>
+     </div>
+     <div class="container">
+       <ul class="footer-user-nav">
+        <li><a href="#">Войти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+      <section class="footer-tel">
+        <h2 class="visually-hidden">Наш телефон</h2>
+        <p>
+          Тел.: +7 (495) 495-95-95</p>
+      </section>
       <a class="logo-html visually-hidden" href="https://htmlacademy.ru/">htmlacademy</a>
+     </div>
+     </div>
     </footer>
     
     <section class="modal modal-mail">
@@ -254,7 +268,7 @@
        </p>     
         <button class="button">Отправить</button>
       </form>
-      <button class="modal-close-button">Закрыть</button>
+      <button class="modal-close-button visually-hidden">Закрыть</button>
     </section>
     
     <section class="modal modal-map">
@@ -262,7 +276,7 @@
       <p>
         <img src="img/map-popup.jpg" width="780" height="560" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
       </p>
-      <button class="modal-close">Закрыть</button>
+      <button class="modal-close visually-hidden">Закрыть</button>
     </section>
   </body>
 </html>
